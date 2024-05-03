@@ -6,7 +6,7 @@ export type Props = {
   tipo?: 'principal' | 'secundario';
 }
 
-const Paragraph = ({ children, tipo = 'principal' }: Props) => <ParagraphStyles tipo={tipo}>{children}</ParagraphStyles>
+const Paragraph = ({ children, tipo = 'principal', fontSize }: Props) => <ParagraphStyles fontSize={fontSize} tipo={tipo}>{children}</ParagraphStyles>
 
 
 
