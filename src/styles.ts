@@ -1,5 +1,9 @@
 import styled, { createGlobalStyle } from 'styled-components'
+
+import ThemeType from './themes/dark'
 const EstiloGlobal = createGlobalStyle`
+
+
 *{
   padding:0;
   margin:0;
@@ -7,6 +11,7 @@ const EstiloGlobal = createGlobalStyle`
   list-style:none;
 }
 body{
+  background-color:${(props) => (props.theme as typeof ThemeType).corDeFundo};
   padding-top:80px;
   padding-bottom:80px;
   @media (max-width:768px) {
